@@ -93,6 +93,12 @@
   <ItemGroup>
     <Compile Include="Connection\hub.vb" />
     <Compile Include="Connection\sql.vb" />
+    <Compile Include="Form\Cari_Dokter_Form.Designer.vb">
+      <DependentUpon>Cari_Dokter_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Cari_Dokter_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\Dokter_Form.Designer.vb">
       <DependentUpon>Dokter_Form.vb</DependentUpon>
     </Compile>
@@ -122,6 +128,12 @@
       <DependentUpon>Obat_Form.vb</DependentUpon>
     </Compile>
     <Compile Include="Form\Obat_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Penjualan_Form.Designer.vb">
+      <DependentUpon>Penjualan_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Penjualan_Form.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\Satuan_Form.Designer.vb">
@@ -161,6 +173,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form\Cari_Dokter_Form.resx">
+      <DependentUpon>Cari_Dokter_Form.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\Dokter_Form.resx">
       <DependentUpon>Dokter_Form.vb</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Obat_Form.resx">
       <DependentUpon>Obat_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Penjualan_Form.resx">
+      <DependentUpon>Penjualan_Form.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Satuan_Form.resx">
       <DependentUpon>Satuan_Form.vb</DependentUpon>

@@ -246,7 +246,7 @@ Partial Class Main_Menu_Form
         '
         Me.Menu_Penjualan.Image = CType(resources.GetObject("Menu_Penjualan.Image"), System.Drawing.Image)
         Me.Menu_Penjualan.Name = "Menu_Penjualan"
-        Me.Menu_Penjualan.Size = New System.Drawing.Size(144, 22)
+        Me.Menu_Penjualan.Size = New System.Drawing.Size(180, 22)
         Me.Menu_Penjualan.Text = "Penjualan"
         '
         'Menu_Nota
