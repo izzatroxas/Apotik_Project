@@ -110,7 +110,7 @@ Partial Class Dokter_Form
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Label10.Location = New System.Drawing.Point(381, 10)
+        Me.Label10.Location = New System.Drawing.Point(311, 9)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(160, 31)
         Me.Label10.TabIndex = 5
@@ -165,7 +165,7 @@ Partial Class Dokter_Form
         Me.exit_btn.Name = "exit_btn"
         Me.exit_btn.Size = New System.Drawing.Size(75, 23)
         Me.exit_btn.TabIndex = 1
-        Me.exit_btn.Text = "Exit"
+        Me.exit_btn.Text = "Clean"
         Me.exit_btn.UseVisualStyleBackColor = True
         '
         'reset_btn
@@ -308,7 +308,7 @@ Partial Class Dokter_Form
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Dokter_Form"
-        Me.Text = "Dokter_Form"
+        Me.Text = "Data Dokter"
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         CType(Me.ProjectDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

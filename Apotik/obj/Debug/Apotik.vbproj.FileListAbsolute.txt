@@ -16,7 +16,6 @@ D:\Kuliah\Semester 5\Apotik\Apotik\Apotik\obj\Debug\Apotik.Obat_Form.resources
 D:\Kuliah\Semester 5\Apotik\Apotik\Apotik\obj\Debug\Apotik.Dokter_Form.resources
 D:\Kuliah\Semester 5\Apotik\Apotik\Apotik\obj\Debug\Apotik.Kategori_Form.resources
 D:\Kuliah\Semester 5\Apotik\Apotik\Apotik\obj\Debug\Apotik.Satuan_Form.resources
-D:\Kuliah\Semester 5\Apotik_Project\Apotik\bin\Debug\project.accdb
 D:\Kuliah\Semester 5\Apotik_Project\Apotik\bin\Debug\Apotik.exe.config
 D:\Kuliah\Semester 5\Apotik_Project\Apotik\bin\Debug\Apotik.exe
 D:\Kuliah\Semester 5\Apotik_Project\Apotik\bin\Debug\Apotik.pdb
@@ -34,3 +33,4 @@ D:\Kuliah\Semester 5\Apotik_Project\Apotik\obj\Debug\Apotik.vbproj.CoreCompileIn
 D:\Kuliah\Semester 5\Apotik_Project\Apotik\obj\Debug\Apotik.exe
 D:\Kuliah\Semester 5\Apotik_Project\Apotik\obj\Debug\Apotik.xml
 D:\Kuliah\Semester 5\Apotik_Project\Apotik\obj\Debug\Apotik.pdb
+D:\Kuliah\Semester 5\Apotik_Project\Apotik\obj\Debug\Apotik.Supplier_Form.resources

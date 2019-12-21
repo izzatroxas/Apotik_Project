@@ -8,5 +8,8 @@ Fungsi
 *Login Form
 *Main Menu
 *Data Obat
+*Data Dokter
+*Kategori
+*Satuan
 
 Sisa masih progress Design

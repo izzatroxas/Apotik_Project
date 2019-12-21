@@ -44,4 +44,12 @@
     Private Sub Menu_SObat_Click(sender As Object, e As EventArgs) Handles Menu_SObat.Click
         Satuan_Form.Show()
     End Sub
+
+    Private Sub B_Pemasok_Click(sender As Object, e As EventArgs) Handles B_Pemasok.Click
+        Supplier_Form.Show()
+    End Sub
+
+    Private Sub Menu_Pemasok_Click(sender As Object, e As EventArgs) Handles Menu_Pemasok.Click
+        Supplier_Form.Show()
+    End Sub
 End Class

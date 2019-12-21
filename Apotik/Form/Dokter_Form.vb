@@ -56,9 +56,20 @@ Public Class Dokter_Form
         ds = Sql_dataset(sql)
         dgv_dokter.DataSource = ds.Tables(0)
         dgv_dokter.ReadOnly = True
+        dgv_dokter.Columns(0).HeaderText = "Kode Dokter"
+        dgv_dokter.Columns(1).HeaderText = "Nama Dokter"
+        dgv_dokter.Columns(2).HeaderText = "Alamat"
+        dgv_dokter.Columns(3).HeaderText = "Nomor Telepon"
+        dgv_dokter.Columns(0).Width = 60
+        dgv_dokter.Columns(1).Width = 130
+        dgv_dokter.Columns(2).Width = 200
+        dgv_dokter.Columns(3).Width = 90
+        dgv_dokter.RowsDefaultCellStyle.BackColor = Color.LightBlue
+        dgv_dokter.AlternatingRowsDefaultCellStyle.BackColor = Color.WhiteSmoke
     End Sub
 
     Private Sub Dgv_dokter_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgv_dokter.CellMouseClick
+        On Error Resume Next
         kode.Text = dgv_dokter.Rows(e.RowIndex).Cells(0).Value
         nm_dokter_box.Text = dgv_dokter.Rows(e.RowIndex).Cells(1).Value
         alamat_box.Text = dgv_dokter.Rows(e.RowIndex).Cells(2).Value
@@ -66,6 +77,8 @@ Public Class Dokter_Form
         edit_btn.Enabled = True
         del_btn.Enabled = True
         exit_btn.Enabled = True
+        add_btn.Enabled = False
+        reset_btn.Enabled = True
     End Sub
 
     Private Sub Add_btn_Click(sender As Object, e As EventArgs) Handles add_btn.Click
@@ -177,5 +190,9 @@ Public Class Dokter_Form
         del_btn.Enabled = False
         reset_btn.Enabled = True
         exit_btn.Enabled = True
+    End Sub
+
+    Private Sub exit_btn_Click(sender As Object, e As EventArgs) Handles exit_btn.Click
+        Call Baru()
     End Sub
 End Class

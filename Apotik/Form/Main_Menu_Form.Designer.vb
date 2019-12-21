@@ -199,14 +199,14 @@ Partial Class Main_Menu_Form
         '
         Me.Menu_Obat.Image = CType(resources.GetObject("Menu_Obat.Image"), System.Drawing.Image)
         Me.Menu_Obat.Name = "Menu_Obat"
-        Me.Menu_Obat.Size = New System.Drawing.Size(180, 22)
+        Me.Menu_Obat.Size = New System.Drawing.Size(160, 22)
         Me.Menu_Obat.Text = "Data Obat"
         '
         'Menu_Dokter
         '
         Me.Menu_Dokter.Image = CType(resources.GetObject("Menu_Dokter.Image"), System.Drawing.Image)
         Me.Menu_Dokter.Name = "Menu_Dokter"
-        Me.Menu_Dokter.Size = New System.Drawing.Size(180, 22)
+        Me.Menu_Dokter.Size = New System.Drawing.Size(160, 22)
         Me.Menu_Dokter.Text = "Data Dokter"
         '
         'Menu_Pemasok
@@ -219,20 +219,20 @@ Partial Class Main_Menu_Form
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(157, 6)
         '
         'Menu_KObat
         '
         Me.Menu_KObat.Image = CType(resources.GetObject("Menu_KObat.Image"), System.Drawing.Image)
         Me.Menu_KObat.Name = "Menu_KObat"
-        Me.Menu_KObat.Size = New System.Drawing.Size(180, 22)
+        Me.Menu_KObat.Size = New System.Drawing.Size(160, 22)
         Me.Menu_KObat.Text = "Kategori Obat"
         '
         'Menu_SObat
         '
         Me.Menu_SObat.Image = CType(resources.GetObject("Menu_SObat.Image"), System.Drawing.Image)
         Me.Menu_SObat.Name = "Menu_SObat"
-        Me.Menu_SObat.Size = New System.Drawing.Size(180, 22)
+        Me.Menu_SObat.Size = New System.Drawing.Size(160, 22)
         Me.Menu_SObat.Text = "Satuan Obat"
         '
         'TransaksiToolStripMenuItem
