@@ -233,7 +233,6 @@ Public Class Obat_Form
                 Dim edit As String
                 edit = "UPDATE tbl_obat SET nama_obat = @nm, kategori = @ktg, satuan = @stn, stok = @stk, harga_beli = @hrgb, harga_jual = @hrgj, laba = @l WHERE kode_obat = @kd"
                 cmd = New OleDbCommand(edit, conn)
-                cmd.Parameters.AddWithValue("@kd", kode.Text)
                 cmd.Parameters.AddWithValue("@nm", nm_obat.Text)
                 cmd.Parameters.AddWithValue("@ktg", kategori_obat.Text)
                 cmd.Parameters.AddWithValue("@stn", satu_an.Text)
@@ -241,6 +240,7 @@ Public Class Obat_Form
                 cmd.Parameters.AddWithValue("@hrgb", hrg_beli.Text)
                 cmd.Parameters.AddWithValue("@hrgj", hrg_jual.Text)
                 cmd.Parameters.AddWithValue("@l", laba_box.Text)
+                cmd.Parameters.AddWithValue("@kd", kode.Text)
                 cmd.ExecuteNonQuery()
                 MessageBox.Show("Data Berhasil Diupdate")
             End If

@@ -45,6 +45,12 @@ Public Class Kategori_Form
         ds = Sql_dataset(sql)
         dgv_kategori.DataSource = ds.Tables(0)
         dgv_kategori.ReadOnly = True
+        dgv_kategori.Columns(0).HeaderText = "Kode Kategori"
+        dgv_kategori.Columns(1).HeaderText = "Kategori Barang"
+        dgv_kategori.Columns(0).Width = 50
+        dgv_kategori.Columns(1).Width = 120
+        dgv_kategori.RowsDefaultCellStyle.BackColor = Color.LightBlue
+        dgv_kategori.AlternatingRowsDefaultCellStyle.BackColor = Color.WhiteSmoke
     End Sub
 
     Private Sub Exit_btn_Click(sender As Object, e As EventArgs) Handles exit_btn.Click
@@ -116,8 +122,8 @@ Public Class Kategori_Form
                 Dim edit As String
                 edit = "UPDATE tbl_kategori SET kategori = @ktg WHERE kode_kategori = @kd"
                 cmd = New OleDbCommand(edit, conn)
-                cmd.Parameters.AddWithValue("@kd", kode.Text)
                 cmd.Parameters.AddWithValue("@ktg", nm_kategori_box.Text)
+                cmd.Parameters.AddWithValue("@kd", kode.Text)
                 cmd.ExecuteNonQuery()
                 MessageBox.Show("Data Berhasil Diupdate")
             End If

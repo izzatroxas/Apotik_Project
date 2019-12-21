@@ -166,10 +166,10 @@ Public Class Supplier_Form
                 Dim edit As String
                 edit = "UPDATE tbl_supplier SET nama_supplier = @nm, alamat = @almt, nomor_telepon = @telf WHERE kode_supplier = @kd"
                 cmd = New OleDbCommand(edit, conn)
-                cmd.Parameters.AddWithValue("@kd", kode.Text)
                 cmd.Parameters.AddWithValue("@nm", nm_pemasok_box.Text)
                 cmd.Parameters.AddWithValue("@almt", alamat_box.Text)
                 cmd.Parameters.AddWithValue("@telf", telepon_box.Text)
+                cmd.Parameters.AddWithValue("@kd", kode.Text)
                 cmd.ExecuteNonQuery()
                 MessageBox.Show("Data Berhasil Diupdate")
             End If
@@ -192,7 +192,7 @@ Public Class Supplier_Form
         exit_btn.Enabled = True
     End Sub
 
-    Private Sub exit_btn_Click(sender As Object, e As EventArgs) Handles exit_btn.Click
+    Private Sub Exit_btn_Click(sender As Object, e As EventArgs) Handles exit_btn.Click
         Call Baru()
     End Sub
 End Class

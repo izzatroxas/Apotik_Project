@@ -224,7 +224,7 @@ Partial Class Satuan_Form
         Me.Controls.Add(Me.GroupBox3)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Satuan_Form"
-        Me.Text = "Satuan_Form"
+        Me.Text = "Satuan Barang"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.dgv_satuan, System.ComponentModel.ISupportInitialize).EndInit()

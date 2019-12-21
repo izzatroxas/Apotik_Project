@@ -45,6 +45,12 @@ Public Class Satuan_Form
         ds = Sql_dataset(sql)
         dgv_satuan.DataSource = ds.Tables(0)
         dgv_satuan.ReadOnly = True
+        dgv_satuan.Columns(0).HeaderText = "Kode Satuan"
+        dgv_satuan.Columns(1).HeaderText = "Satuan Barang"
+        dgv_satuan.Columns(0).Width = 50
+        dgv_satuan.Columns(1).Width = 100
+        dgv_satuan.RowsDefaultCellStyle.BackColor = Color.LightBlue
+        dgv_satuan.AlternatingRowsDefaultCellStyle.BackColor = Color.WhiteSmoke
     End Sub
 
     Private Sub Exit_btn_Click(sender As Object, e As EventArgs) Handles exit_btn.Click
@@ -97,7 +103,7 @@ Public Class Satuan_Form
     End Sub
     Private Sub Save_btn_Click(sender As Object, e As EventArgs) Handles save_btn.Click
         Call Kon()
-        sql = "SELECT * FROM tbl_kategori WHERE kode_kategori ='" & kode.Text & "'"
+        sql = "SELECT * FROM tbl_satuan WHERE kode_satuan ='" & kode.Text & "'"
         cmd = New OleDbCommand(sql, conn)
         dr = cmd.ExecuteReader
         dr.Read()
@@ -116,8 +122,8 @@ Public Class Satuan_Form
                 Dim edit As String
                 edit = "UPDATE tbl_satuan SET satuan = @stn WHERE kode_satuan = @kd"
                 cmd = New OleDbCommand(edit, conn)
-                cmd.Parameters.AddWithValue("@kd", kode.Text)
                 cmd.Parameters.AddWithValue("@stn", nm_satuan_box.Text)
+                cmd.Parameters.AddWithValue("@kd", kode.Text)
                 cmd.ExecuteNonQuery()
                 MessageBox.Show("Data Berhasil Diupdate")
             End If
