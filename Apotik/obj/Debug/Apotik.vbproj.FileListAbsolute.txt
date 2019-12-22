@@ -36,3 +36,4 @@ D:\Kuliah\Semester 5\Apotik_Project\Apotik\obj\Debug\Apotik.pdb
 D:\Kuliah\Semester 5\Apotik_Project\Apotik\obj\Debug\Apotik.Supplier_Form.resources
 D:\Kuliah\Semester 5\Apotik_Project\Apotik\obj\Debug\Apotik.Cari_Dokter_Form.resources
 D:\Kuliah\Semester 5\Apotik_Project\Apotik\obj\Debug\Apotik.Penjualan_Form.resources
+D:\Kuliah\Semester 5\Apotik_Project\Apotik\obj\Debug\Apotik.Cari_Obat_Form.resources

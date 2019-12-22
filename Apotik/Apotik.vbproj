@@ -99,6 +99,12 @@
     <Compile Include="Form\Cari_Dokter_Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form\Cari_Obat_Form.Designer.vb">
+      <DependentUpon>Cari_Obat_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Cari_Obat_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\Dokter_Form.Designer.vb">
       <DependentUpon>Dokter_Form.vb</DependentUpon>
     </Compile>
@@ -175,6 +181,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form\Cari_Dokter_Form.resx">
       <DependentUpon>Cari_Dokter_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Cari_Obat_Form.resx">
+      <DependentUpon>Cari_Obat_Form.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Dokter_Form.resx">
       <DependentUpon>Dokter_Form.vb</DependentUpon>

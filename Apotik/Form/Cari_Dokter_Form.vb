@@ -31,4 +31,11 @@ Public Class Cari_Dokter_Form
         dgv_dokter.DataSource = ds.Tables(0)
         dgv_dokter.ReadOnly = True
     End Sub
+
+    Private Sub Dgv_dokter_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_dokter.CellDoubleClick
+        On Error Resume Next
+        Penjualan_Form.kode_dokter_lbl.Text = dgv_dokter.Rows(e.RowIndex).Cells(0).Value
+        Penjualan_Form.nm_dokter_box.Text = dgv_dokter.Rows(e.RowIndex).Cells(1).Value
+        Me.Close()
+    End Sub
 End Class

@@ -36,9 +36,9 @@ Partial Class Penjualan_Form
         Me.hrg_jual_box = New System.Windows.Forms.TextBox()
         Me.potongan_box = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tot_bay_box = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.nota_lbl = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -168,35 +168,35 @@ Partial Class Penjualan_Form
         Me.Label7.TabIndex = 71
         Me.Label7.Text = "Total Harga"
         '
-        'TextBox1
+        'tot_bay_box
         '
-        Me.TextBox1.Location = New System.Drawing.Point(262, 86)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox1.TabIndex = 72
+        Me.tot_bay_box.Location = New System.Drawing.Point(262, 86)
+        Me.tot_bay_box.Name = "tot_bay_box"
+        Me.tot_bay_box.Size = New System.Drawing.Size(164, 20)
+        Me.tot_bay_box.TabIndex = 72
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label4.Location = New System.Drawing.Point(544, 18)
+        Me.Label4.Location = New System.Drawing.Point(524, 18)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(84, 24)
         Me.Label4.TabIndex = 73
         Me.Label4.Text = "No. Nota"
         '
-        'Label8
+        'nota_lbl
         '
-        Me.Label8.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label8.Location = New System.Drawing.Point(634, 16)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(65, 26)
-        Me.Label8.TabIndex = 74
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.nota_lbl.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.nota_lbl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.nota_lbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nota_lbl.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.nota_lbl.Location = New System.Drawing.Point(614, 16)
+        Me.nota_lbl.Name = "nota_lbl"
+        Me.nota_lbl.Size = New System.Drawing.Size(85, 26)
+        Me.nota_lbl.TabIndex = 74
+        Me.nota_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'DataGridView1
         '
@@ -209,7 +209,7 @@ Partial Class Penjualan_Form
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.nota_lbl)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Location = New System.Drawing.Point(4, -4)
         Me.GroupBox1.Name = "GroupBox1"
@@ -312,7 +312,7 @@ Partial Class Penjualan_Form
         Me.Controls.Add(Me.A1)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.tot_bay_box)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.potongan_box)
         Me.Controls.Add(Me.hrg_jual_box)
@@ -329,6 +329,7 @@ Partial Class Penjualan_Form
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
         Me.Name = "Penjualan_Form"
         Me.Text = "Transaksi Penjualan"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -352,9 +353,9 @@ Partial Class Penjualan_Form
     Friend WithEvents hrg_jual_box As TextBox
     Friend WithEvents potongan_box As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents tot_bay_box As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label8 As Label
+    Friend WithEvents nota_lbl As Label
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label9 As Label
