@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Penjualan_Form
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Penjualan_Form
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Penjualan_Form))
         Me.Label1 = New System.Windows.Forms.Label()
@@ -39,7 +39,7 @@ Partial Class Penjualan_Form
         Me.tot_bay_box = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.nota_lbl = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgv_penjualan = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.A1 = New System.Windows.Forms.Label()
@@ -49,7 +49,7 @@ Partial Class Penjualan_Form
         Me.A12 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.tot_lbl = New System.Windows.Forms.Label()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_penjualan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -91,7 +91,7 @@ Partial Class Penjualan_Form
         Me.kode_dokter_lbl.Name = "kode_dokter_lbl"
         Me.kode_dokter_lbl.Size = New System.Drawing.Size(47, 21)
         Me.kode_dokter_lbl.TabIndex = 62
-        Me.kode_dokter_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.kode_dokter_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'nm_dokter_box
         '
@@ -108,7 +108,7 @@ Partial Class Penjualan_Form
         Me.kode_obat_lbl.Name = "kode_obat_lbl"
         Me.kode_obat_lbl.Size = New System.Drawing.Size(47, 21)
         Me.kode_obat_lbl.TabIndex = 64
-        Me.kode_obat_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.kode_obat_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'nm_obat_box
         '
@@ -133,6 +133,7 @@ Partial Class Penjualan_Form
         Me.jmlh_box.Name = "jmlh_box"
         Me.jmlh_box.Size = New System.Drawing.Size(47, 20)
         Me.jmlh_box.TabIndex = 67
+        Me.jmlh_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label6
         '
@@ -150,6 +151,7 @@ Partial Class Penjualan_Form
         Me.hrg_jual_box.Name = "hrg_jual_box"
         Me.hrg_jual_box.Size = New System.Drawing.Size(100, 20)
         Me.hrg_jual_box.TabIndex = 69
+        Me.hrg_jual_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'potongan_box
         '
@@ -157,6 +159,7 @@ Partial Class Penjualan_Form
         Me.potongan_box.Name = "potongan_box"
         Me.potongan_box.Size = New System.Drawing.Size(100, 20)
         Me.potongan_box.TabIndex = 70
+        Me.potongan_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label7
         '
@@ -174,6 +177,7 @@ Partial Class Penjualan_Form
         Me.tot_bay_box.Name = "tot_bay_box"
         Me.tot_bay_box.Size = New System.Drawing.Size(164, 20)
         Me.tot_bay_box.TabIndex = 72
+        Me.tot_bay_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label4
         '
@@ -198,14 +202,14 @@ Partial Class Penjualan_Form
         Me.nota_lbl.TabIndex = 74
         Me.nota_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'DataGridView1
+        'dgv_penjualan
         '
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.SaddleBrown
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(4, 126)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(716, 285)
-        Me.DataGridView1.TabIndex = 75
+        Me.dgv_penjualan.BackgroundColor = System.Drawing.Color.SaddleBrown
+        Me.dgv_penjualan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_penjualan.Location = New System.Drawing.Point(4, 126)
+        Me.dgv_penjualan.Name = "dgv_penjualan"
+        Me.dgv_penjualan.Size = New System.Drawing.Size(716, 285)
+        Me.dgv_penjualan.TabIndex = 75
         '
         'GroupBox1
         '
@@ -296,7 +300,7 @@ Partial Class Penjualan_Form
         Me.tot_lbl.Name = "tot_lbl"
         Me.tot_lbl.Size = New System.Drawing.Size(183, 52)
         Me.tot_lbl.TabIndex = 75
-        Me.tot_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tot_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Penjualan_Form
         '
@@ -311,7 +315,7 @@ Partial Class Penjualan_Form
         Me.Controls.Add(Me.A2)
         Me.Controls.Add(Me.A1)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgv_penjualan)
         Me.Controls.Add(Me.tot_bay_box)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.potongan_box)
@@ -332,7 +336,7 @@ Partial Class Penjualan_Form
         Me.KeyPreview = True
         Me.Name = "Penjualan_Form"
         Me.Text = "Transaksi Penjualan"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_penjualan, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
@@ -356,7 +360,7 @@ Partial Class Penjualan_Form
     Friend WithEvents tot_bay_box As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents nota_lbl As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgv_penjualan As DataGridView
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label9 As Label
     Friend WithEvents A1 As Label

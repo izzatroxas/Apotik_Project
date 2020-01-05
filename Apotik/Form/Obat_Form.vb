@@ -73,8 +73,6 @@ Public Class Obat_Form
         ds = Sql_dataset(sql)
         dgv_obat.DataSource = ds.Tables(0)
         dgv_obat.ReadOnly = True
-        dgv_obat.DataSource = ds.Tables(0)
-        dgv_obat.ReadOnly = True
         dgv_obat.Columns(0).HeaderText = "Kode Obat"
         dgv_obat.Columns(1).HeaderText = "Nama Obat"
         dgv_obat.Columns(2).HeaderText = "Kategori"

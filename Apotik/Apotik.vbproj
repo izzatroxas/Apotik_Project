@@ -93,6 +93,12 @@
   <ItemGroup>
     <Compile Include="Connection\hub.vb" />
     <Compile Include="Connection\sql.vb" />
+    <Compile Include="Form\byr_penjualan_form.Designer.vb">
+      <DependentUpon>byr_penjualan_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\byr_penjualan_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\Cari_Dokter_Form.Designer.vb">
       <DependentUpon>Cari_Dokter_Form.vb</DependentUpon>
     </Compile>
@@ -179,6 +185,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form\byr_penjualan_form.resx">
+      <DependentUpon>byr_penjualan_form.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\Cari_Dokter_Form.resx">
       <DependentUpon>Cari_Dokter_Form.vb</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +250,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons8_pill.ico" />
+    <None Include="Resources\cash_in_hand_32px.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
