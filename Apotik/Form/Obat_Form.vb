@@ -81,16 +81,14 @@ Public Class Obat_Form
         dgv_obat.Columns(5).HeaderText = "Harga Beli"
         dgv_obat.Columns(6).HeaderText = "Harga Jual"
         dgv_obat.Columns(7).HeaderText = "Laba"
-        dgv_obat.Columns(8).HeaderText = "Kode Pemasok"
         dgv_obat.Columns(0).Width = 50
         dgv_obat.Columns(1).Width = 110
-        dgv_obat.Columns(2).Width = 60
-        dgv_obat.Columns(3).Width = 60
+        dgv_obat.Columns(2).Width = 70
+        dgv_obat.Columns(3).Width = 70
         dgv_obat.Columns(4).Width = 40
-        dgv_obat.Columns(5).Width = 75
-        dgv_obat.Columns(6).Width = 75
-        dgv_obat.Columns(7).Width = 75
-        dgv_obat.Columns(8).Width = 50
+        dgv_obat.Columns(5).Width = 85
+        dgv_obat.Columns(6).Width = 85
+        dgv_obat.Columns(7).Width = 85
         dgv_obat.RowsDefaultCellStyle.BackColor = Color.LightBlue
         dgv_obat.AlternatingRowsDefaultCellStyle.BackColor = Color.WhiteSmoke
     End Sub

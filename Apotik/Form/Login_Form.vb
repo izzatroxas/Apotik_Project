@@ -38,7 +38,7 @@ Public Class Login
 
     Private Sub Tpassword_KeyDown(sender As Object, e As KeyEventArgs) Handles Tpassword.KeyDown
         If e.KeyCode = Keys.Enter Then
-            OK.Select()
+            Call Masuk()
         End If
     End Sub
 
